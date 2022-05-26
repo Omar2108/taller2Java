@@ -26,6 +26,11 @@ public class Transbordador extends NaveTripulada implements Propulsores{
         this.velocidad = 0;
     }
 
+    public Transbordador(int velocidad, int tripulantes) {
+        this.velocidad = velocidad;
+        this.tripulantes = tripulantes;
+    }
+    
     /**
      * llamado del metodo acelerar de la clase abstracta naveTripulada
      */
@@ -41,6 +46,11 @@ public class Transbordador extends NaveTripulada implements Propulsores{
      */
     @Override
     public void setTripulantes(int tripulantes) {
+        System.out.println("El transbordador lleva a bordo "+tripulantes+" tripulantes");
+        
+    }
+    
+    public void setTripulantes(Integer tripulantes) {
         System.out.println("El transbordador lleva a bordo "+tripulantes+" tripulantes");
         
     }

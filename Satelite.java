@@ -14,7 +14,7 @@ public class Satelite extends NaveNoTripuladas implements Propulsores{
     public Satelite() {
         super();
     }
-
+    
     
     /**
      * llamado del metodo aterrizar de la clase abstracta NaveNoTripuladas

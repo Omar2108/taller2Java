@@ -21,6 +21,17 @@ public class Cohete extends NaveLanzadera implements Propulsores {
         super(nombre);
         
     }
+
+    /**
+     *
+     * @param nombre
+     * @param nombres
+     * 
+     */
+    public Cohete(String nombre, String nombres) {
+        super(nombre);
+        this.nombre = nombre;
+    }
     
     /**
      * llamado del metodo setNombre de la clase abstracta naveLanzadera
@@ -35,6 +46,10 @@ public class Cohete extends NaveLanzadera implements Propulsores {
      */
     @Override
     public void setNombre(String nombre) {
+        System.out.println("El cohete tiene como nombre "+nombre);
+    }
+    
+     public void setNombre(char nombre) {
         System.out.println("El cohete tiene como nombre "+nombre);
     }
     
